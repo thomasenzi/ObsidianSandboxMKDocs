@@ -1,0 +1,43 @@
+# Project information
+site_name: 'Der Name'
+site_description: 'Die Beschreibung'
+site_author: 'Thomas Enzi'
+site_url: 'https://www.thomasenzi.at'
+nav:
+    - Inhalt: 'Start Here.md'
+    - Unterkapitel:
+        - Beispiel 1: 'Formatting/Blockquote.md'
+
+# Configuration
+theme:
+  name: 'material'
+  language: 'de'
+  palette:
+    primary: 'light blue'
+    accent: 'orange'
+  font:
+    text: 'Roboto'
+    code: 'Roboto Mono'
+  highlightjs: true
+
+# Customization
+extra:
+  manifest: 'manifest.webmanifest'
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: 'https://github.com/sundowndev/PhoneInfoga'
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - attr_list
+  - codehilite:
+      guess_lang: true
+  - toc:
+      permalink: true
+  - footnotes
+  - pymdownx.details
+  
+plugins:
+  - callouts
+  - search
